@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Quotes</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body class="body">
+    <div class="container">
+       <h1 class="headingMain">
+        Programmers Quote of the day
+       </h1> 
+    </div>
+
+    <div class="response-area">
+        <p><%=quote%> <br/> <small>Author: <%=author%> </small> </p> 
+      </div>
+
+      <form action="/show10Quotes" method="post" class="form">
+       <a href="./quotes.ejs"><input type="submit" name="showQuoteButton" value="Show 10 Random Quotes" style="font-size: medium; border-radius: 20px; height: 50px; background-color: pink;"/></a> 
+    </form>
+</body>
+</html>
